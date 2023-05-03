@@ -7,6 +7,11 @@ html {
     box-sizing: border-box;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -29,6 +34,7 @@ body {
     font-size: 1.8rem; 
     font-weight: 600;
     text-align: center;
+    margin-bottom: 15px;
 }
 
 #subtitle {
@@ -48,7 +54,7 @@ body {
 #cta-section {
     background-color: #6055a5;
     color: white;
-    padding: 20px;
+    padding: 20px 50px; 
     margin-bottom: 20px;
     border-radius: 8px;
     box-shadow: 0px 7px 0px 0px rgba(0, 0, 0, 0.1);
@@ -71,10 +77,16 @@ body {
     font-size: 0.9rem;
     font-weight: 600;
     padding-left: 10px;
+    padding-right: 40px;
     border-radius: 5px;
     border: 1px solid #b9b6d3;
     box-sizing: border-box;
     opacity: 80%;
+}
+
+.input-container {
+    margin: auto;
+    padding: 0px;
 }
 
 #button {
@@ -91,9 +103,15 @@ body {
     text-align: center;
 }
 
+#button:hover {
+    background-color: #57f2af;
+}
+
 #terms-section {
     color: #b9b6d3;
     font-size: 0.7rem;
+    text-align: center;
+    margin-top: 10px;
 }
 
 #terms {
@@ -101,11 +119,15 @@ body {
     font-weight: 600;
 }
 
-@media all and (min-width: 562px) {
+br {
+    height: 0px;
+}
+
+@media all and (min-width: 550px) {
     body {
         background-image: url(images/bg-intro-desktop.png);
         flex-direction: row;
-        padding: 100px;
+        padding: 150px;
     }
 
     #text-section {
@@ -118,6 +140,12 @@ body {
     }
 
     #title {
-        font-size: 2.5rem;
+        font-size: 4rem;
+        line-height: 4.5rem;
+        text-align: left;
+    }
+
+    #subtitle {
+        text-align: left;
     }
 }
